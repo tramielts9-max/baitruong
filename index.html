@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS - Strategic Decision & Simulation Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>NEXUS <span>CORP</span></h2>
+                <p>Global2020 Decision System</p>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="tab-diagnostics">
+                    <span class="icon">📊</span> 1. Chẩn đoán hiện trạng
+                </button>
+                <button class="nav-btn" data-tab="tab-roadmap">
+                    <span class="icon">🗺️</span> 2. Chiến lược 7 năm
+                </button>
+                <button class="nav-btn" data-tab="tab-decisions">
+                    <span class="icon">🎯</span> 3. Quyết định Năm 1
+                </button>
+                <button class="nav-btn" data-tab="tab-reference">
+                    <span class="icon">📚</span> 4. Tra cứu dữ liệu gốc
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="status-badge live">Kỳ hiện tại: Năm 1</div>
+                <small>Thị phần: 12.5% | Value: 2,349</small>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-title">
+                    <h1 id="page-title">Chẩn đoán hiện trạng & Bóc tách tài chính</h1>
+                    <p id="page-subtitle">Phân tích chuyên sâu kết quả kinh doanh 2024 - 2025 và tìm ra các điểm nghẽn</p>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-pill danger">
+                        <span>Net Profit:</span> <strong>-8,088 AUD</strong>
+                    </div>
+                    <div class="stat-pill warning">
+                        <span>Lỗi SP:</span> <strong>19.8%</strong>
+                    </div>
+                    <div class="stat-pill info">
+                        <span>Tiền mặt:</span> <strong>0 AUD (Thấu chi)</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Tab 1: Diagnostics -->
+                <section id="tab-diagnostics" class="tab-pane active"></section>
+
+                <!-- Tab 2: Roadmap -->
+                <section id="tab-roadmap" class="tab-pane"></section>
+
+                <!-- Tab 3: Year 1 Decisions -->
+                <section id="tab-decisions" class="tab-pane"></section>
+
+                <!-- Tab 4: Reference Data -->
+                <section id="tab-reference" class="tab-pane"></section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts Module Loading -->
+    <script src="js/data.js"></script>
+    <script src="js/diagnostics.js"></script>
+    <script src="js/roadmap.js"></script>
+    <script src="js/year1-decisions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
